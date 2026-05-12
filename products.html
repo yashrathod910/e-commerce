@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <title>JS-Ecom-Web</title>
+</head>
+
+<body>
+  <header class="section-navbar">
+    <script src="header.js"></script>
+  </header>
+
+  
+
+  <section class="section-extra-product">
+    <div class="container grid grid-three--cols">
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>get and extra 50% off</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img extra-laptop">
+          <img src="./images/laptop.png" alt="" />
+        </div>
+      </div>
+
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>40% discount on speakers</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img">
+          <img src="./images/headphoneEcom.png" alt="" />
+        </div>
+      </div>
+
+      <div class="div-extra grid grid-two--cols">
+        <div class="extra-text">
+          <p>new year sale</p>
+          <h3>get and extra 50% off</h3>
+          <a href="#">Show now</a>
+        </div>
+        <div class="extra-img">
+          <img src="./images/mobiles.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-products">
+    <div class="container">
+      <h2 class="section-common-heading">Checkout Yash Store</h2>
+    </div>
+    <section class="container">
+      <div id="productContainer">
+        
+      </div>
+    </section>
+  </section>
+
+  <template id="productTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information [card]">
+        <span class="category"></span>
+        <div class="imageContainer">
+          <img class="productImage" src="" alt="" />
+        </div>
+        <h2 class="productName"></h2>
+
+        <div class="productRating">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <p class="productDescription"></p>
+
+        <div class="productPriceElement">
+          <p class="productPrice"></p>
+          <p class="productActualPrice"></p>
+        </div>
+
+        <div class="productStockElement">
+          <p class="productProperty">Total Stocks Available:</p>
+          <p class="productStock"></p>
+        </div>
+
+        <div class="productQuantityElement">
+          <p class="productProperty">Quantity(Pieces)</p>
+          <div class="stockElement">
+            <button class="cartIncrement">+</button>
+            <p class="productQuantity">1</p>
+            <button class="cartDecrement">-</button>
+          </div>
+        </div>
+
+        <button class="add-to-cart-button">
+          <i class="fa-solid fa-cart-shopping"></i> Add To Cart
+        </button>
+      </article>
+    </div>
+  </template>
+
+  <footer class="section-footer">
+    <script src="footer.js"></script>
+  </footer>
+  <script type="module" src="main.js"></script>
+</body>
+
+</html>
